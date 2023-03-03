@@ -1,10 +1,15 @@
+import org.gradle.internal.impldep.org.junit.experimental.categories.Categories.CategoryFilter.include
+
 val ktor_version: String by project
 val kotlin_version: String by project
 val logback_version: String by project
 
 plugins {
     kotlin("jvm") version "1.8.10"
+    kotlin("plugin.serialization") version "1.8.10"
+    id("com.github.johnrengelman.shadow") version "7.0.0"
     application
+
 }
 
 group = "xyz.rvdz"
@@ -23,6 +28,12 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
+
+    implementation("io.ktor:ktor-client-core:$ktor_version")
+    implementation("io.ktor:ktor-client-cio:$ktor_version")
+
     implementation("io.ktor:ktor-server-netty:1.3.1")
     implementation("com.just-ai.jaicf:core:1.2.5")
     implementation("com.just-ai.jaicf:yandex-alice:1.2.5")
@@ -32,3 +43,4 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 }
+
