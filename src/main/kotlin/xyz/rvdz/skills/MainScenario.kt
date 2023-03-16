@@ -55,7 +55,7 @@ class MainScenario {
             }
 
             action {
-              //  reactions.say("Ок")
+                //  reactions.say("Ок")
                 runBlocking {
                     KodiClient().mute(true)
                 }
@@ -69,7 +69,7 @@ class MainScenario {
             }
 
             action {
-               // reactions.say("Ок")
+                // reactions.say("Ок")
                 runBlocking {
                     KodiClient().mute(false)
                 }
@@ -83,7 +83,7 @@ class MainScenario {
             }
 
             action {
-              //  reactions.say("Ок")
+                //  reactions.say("Ок")
                 runBlocking {
                     KodiClient().input("Up")
                 }
@@ -95,7 +95,7 @@ class MainScenario {
             }
 
             action {
-              //  reactions.say("Ок")
+                //  reactions.say("Ок")
                 runBlocking {
                     KodiClient().input("Down")
                 }
@@ -108,7 +108,7 @@ class MainScenario {
             }
 
             action {
-              //  reactions.say("Ок")
+                //  reactions.say("Ок")
                 runBlocking {
                     KodiClient().input("Left")
                 }
@@ -121,7 +121,7 @@ class MainScenario {
             }
 
             action {
-             //   reactions.say("Ок")
+                //   reactions.say("Ок")
                 runBlocking {
                     KodiClient().input("Right")
                 }
@@ -135,7 +135,7 @@ class MainScenario {
             }
 
             action {
-              //  reactions.say("Ок")
+                //  reactions.say("Ок")
                 runBlocking {
                     KodiClient().input("Select")
                 }
@@ -149,7 +149,7 @@ class MainScenario {
             }
 
             action {
-               // reactions.say("Ок")
+                // reactions.say("Ок")
                 runBlocking {
                     KodiClient().input("Info")
                 }
@@ -163,7 +163,7 @@ class MainScenario {
             }
 
             action {
-               // reactions.say("Ок")
+                // reactions.say("Ок")
                 runBlocking {
                     KodiClient().input("Home")
                 }
@@ -177,7 +177,7 @@ class MainScenario {
             }
 
             action {
-               // reactions.say("Ок")
+                // reactions.say("Ок")
                 runBlocking {
                     KodiClient().input("Back")
                 }
